@@ -16,32 +16,26 @@ Siga os passos abaixo para configurar e executar o projeto:
 
 Clone o repositório do projeto para o seu ambiente local:
 
-bash
-Copy code
+
 git clone <URL_DO_REPOSITORIO>
 Acesse o diretório do projeto:
 
-arduino
-Copy code
 cd nome-do-projeto
-Instale as dependências do projeto utilizando o Composer:
-
-Copy code
+Instale as dependências do projeto utilizando o Composer
 composer install
 Crie um arquivo .env na raiz do projeto. Você pode utilizar o arquivo .env.example como base e renomeá-lo para .env. Certifique-se de configurar corretamente as informações do banco de dados de acordo com o banco de dados que você estiver utilizando.
 
 Gere uma chave de criptografia para o aplicativo Laravel:
 
-vbnet
-Copy code
+
 php artisan key:generate
 Execute as migrações do banco de dados para criar as tabelas necessárias:
 
-Copy code
+
 php artisan migrate
 Inicie o servidor de desenvolvimento do Laravel:
 
-Copy code
+
 php artisan serve
 A API agora estará disponível em http://localhost:8000.
 
